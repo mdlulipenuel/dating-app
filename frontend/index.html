@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect & Match</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Connect &amp; Match</h1>
+        <p>Find your perfect match today</p>
+    </header>
+    <nav class="top-nav" style="display:none;">
+        <button id="nav-browse">Browse</button>
+        <button id="nav-matches">Matches</button>
+        <button id="nav-logout">Logout</button>
+    </nav>
+    <main>
+        <section id="auth-forms">
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+            </form>
+            <form id="register-form" style="display:none;">
+                <h2>Create Account</h2>
+                <input type="text" id="reg-username" placeholder="Username" required>
+                <input type="password" id="reg-password" placeholder="Password" required>
+                <input type="text" id="reg-name" placeholder="Full Name" required>
+                <input type="number" id="reg-age" placeholder="Age" required>
+                <input type="text" id="reg-gender" placeholder="Gender" required>
+                <input type="text" id="reg-interests" placeholder="Interests (comma separated)">
+                <textarea id="reg-bio" placeholder="Tell us about yourself"></textarea>
+                <input type="text" id="reg-location" placeholder="Location">
+                <button type="submit">Register</button>
+                <p>Have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+        </section>
+        <section class="profiles-section" style="display:none;">
+            <h2>Browse Profiles</h2>
+            <div id="profiles-container" class="cards-grid"></div>
+        </section>
+        <section class="matches-section" style="display:none;">
+            <h2>Your Matches</h2>
+            <div id="matches-container" class="cards-grid"></div>
+        </section>
+        <section class="chat-section" style="display:none;">
+            <h2>Chat with <span id="chat-partner-name"></span></h2>
+            <div class="chat-window" id="chat-window"></div>
+            <form id="message-form">
+                <input type="text" id="message-input" placeholder="Type a message" required>
+                <button type="submit">Send</button>
+            </form>
+            <button id="back-to-matches" class="back-button">Back to Matches</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Connect &amp; Match</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
