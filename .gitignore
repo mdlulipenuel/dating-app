@@ -1,0 +1,15 @@
+# Ignore Python virtual environments
+venv/
+__pycache__/
+
+# Ignore node modules (if using js tooling)
+node_modules/
+
+# Ignore database files
+*.db
+
+# Ignore zip archives and other archives
+*.zip
+
+# Miscellaneous
+.DS_Store
